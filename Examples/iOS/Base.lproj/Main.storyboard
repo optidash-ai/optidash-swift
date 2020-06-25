@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4vf-pZ-e86">
+                                <rect key="frame" x="0.0" y="44" width="414" height="160"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTF-uh-Tos">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                        <state key="normal" title="Upload and get JSON"/>
+                                        <connections>
+                                            <action selector="firstExampleButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="T3h-z8-MHx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTo-dK-9D4">
+                                        <rect key="frame" x="0.0" y="40" width="414" height="40"/>
+                                        <state key="normal" title="Upload get image data"/>
+                                        <connections>
+                                            <action selector="secondExampleButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="ia4-ld-FSt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCH-sb-sL8">
+                                        <rect key="frame" x="0.0" y="80" width="414" height="40"/>
+                                        <state key="normal" title="Fetch and get JSON"/>
+                                        <connections>
+                                            <action selector="thirdExampleButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="ilc-cU-aLC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9d-pf-Fm3">
+                                        <rect key="frame" x="0.0" y="120" width="414" height="40"/>
+                                        <state key="normal" title="Fetch and get image data"/>
+                                        <connections>
+                                            <action selector="fourthExampleButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="m7U-tt-7uk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="h7a-4c-qb9"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Output:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7R-9A-ajh">
+                                <rect key="frame" x="178" y="220" width="58" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6Z-l6-0FW">
+                                <rect key="frame" x="16" y="256.5" width="382" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dhy-La-3S0">
+                                <rect key="frame" x="16" y="256.5" width="382" height="589.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="l6Z-l6-0FW" secondAttribute="bottom" constant="16" id="1vu-Sf-c6t"/>
+                            <constraint firstItem="X7R-9A-ajh" firstAttribute="top" secondItem="4vf-pZ-e86" secondAttribute="bottom" constant="16" id="7Yj-5K-b7m"/>
+                            <constraint firstItem="l6Z-l6-0FW" firstAttribute="top" secondItem="X7R-9A-ajh" secondAttribute="bottom" constant="16" id="9PD-lU-mCu"/>
+                            <constraint firstItem="4vf-pZ-e86" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BWY-9p-klh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l6Z-l6-0FW" secondAttribute="trailing" constant="16" id="GyQ-xm-F8a"/>
+                            <constraint firstItem="Dhy-La-3S0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Pm3-V5-pC1"/>
+                            <constraint firstItem="l6Z-l6-0FW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Vbe-3N-KHT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4vf-pZ-e86" secondAttribute="trailing" id="aet-kM-n5m"/>
+                            <constraint firstItem="4vf-pZ-e86" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gOr-rG-VXp"/>
+                            <constraint firstItem="X7R-9A-ajh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iwt-SL-tDZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dhy-La-3S0" secondAttribute="bottom" constant="16" id="tUG-G3-pfS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dhy-La-3S0" secondAttribute="trailing" constant="16" id="u5k-kD-Iam"/>
+                            <constraint firstItem="Dhy-La-3S0" firstAttribute="top" secondItem="X7R-9A-ajh" secondAttribute="bottom" constant="16" id="yjf-Kk-8IK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="outputImageView" destination="Dhy-La-3S0" id="Waf-sx-skO"/>
+                        <outlet property="outputLabel" destination="l6Z-l6-0FW" id="aUj-aM-3pN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		084CA3982382DD0100EF2858 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CA3972382DD0100EF2858 /* BaseRequest.swift */; };
+		084CA39A2382DD1000EF2858 /* FetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CA3992382DD1000EF2858 /* FetchRequest.swift */; };
+		084CA39C2382DD2400EF2858 /* UploadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CA39B2382DD2400EF2858 /* UploadRequest.swift */; };
+		087855BA237AC87700F2B162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087855B9237AC87700F2B162 /* AppDelegate.swift */; };
+		087855BC237AC87700F2B162 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087855BB237AC87700F2B162 /* SceneDelegate.swift */; };
+		087855BE237AC87700F2B162 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087855BD237AC87700F2B162 /* ViewController.swift */; };
+		087855C1237AC87700F2B162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 087855BF237AC87700F2B162 /* Main.storyboard */; };
+		087855C3237AC87900F2B162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 087855C2237AC87900F2B162 /* Assets.xcassets */; };
+		087855C6237AC87900F2B162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 087855C4237AC87900F2B162 /* LaunchScreen.storyboard */; };
+		087855CD237ACB4B00F2B162 /* OptidashClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087B85B9237AB8A900D9B1EE /* OptidashClient.swift */; };
+		087855D1237AE2BE00F2B162 /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 087855D0237AE2BE00F2B162 /* sample.jpg */; };
+		087B85B3237AB5D300D9B1EE /* Optidash.h in Headers */ = {isa = PBXBuildFile; fileRef = 087B85B1237AB5D300D9B1EE /* Optidash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		087B85BA237AB8A900D9B1EE /* OptidashClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087B85B9237AB8A900D9B1EE /* OptidashClient.swift */; };
+		08D4A2B52383F19900ED1171 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CA3972382DD0100EF2858 /* BaseRequest.swift */; };
+		08D4A2B62383F19B00ED1171 /* FetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CA3992382DD1000EF2858 /* FetchRequest.swift */; };
+		08D4A2B72383F19D00ED1171 /* UploadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CA39B2382DD2400EF2858 /* UploadRequest.swift */; };
+		08D4A2B9238400F500ED1171 /* OptidashError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D4A2B8238400F500ED1171 /* OptidashError.swift */; };
+		08D4A2BA2384047200ED1171 /* OptidashError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D4A2B8238400F500ED1171 /* OptidashError.swift */; };
+		1C63AA5123AC08C60042DBF0 /* BoundaryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C63AA5023AC08C60042DBF0 /* BoundaryGenerator.swift */; };
+		1C63AA5223AC096B0042DBF0 /* BoundaryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C63AA5023AC08C60042DBF0 /* BoundaryGenerator.swift */; };
+		1C7C344B249FFBA400FBEE26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C344A249FFBA400FBEE26 /* AppDelegate.swift */; };
+		1C7C344D249FFBA400FBEE26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C344C249FFBA400FBEE26 /* ViewController.swift */; };
+		1C7C344F249FFBA600FBEE26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C7C344E249FFBA600FBEE26 /* Assets.xcassets */; };
+		1C7C3452249FFBA600FBEE26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C7C3450249FFBA600FBEE26 /* Main.storyboard */; };
+		1C7C3458249FFF1500FBEE26 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CA3972382DD0100EF2858 /* BaseRequest.swift */; };
+		1C7C3459249FFF1500FBEE26 /* BoundaryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C63AA5023AC08C60042DBF0 /* BoundaryGenerator.swift */; };
+		1C7C345A249FFF1500FBEE26 /* FetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CA3992382DD1000EF2858 /* FetchRequest.swift */; };
+		1C7C345B249FFF1500FBEE26 /* OptidashClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087B85B9237AB8A900D9B1EE /* OptidashClient.swift */; };
+		1C7C345C249FFF1500FBEE26 /* OptidashError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D4A2B8238400F500ED1171 /* OptidashError.swift */; };
+		1C7C345D249FFF1500FBEE26 /* UploadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CA39B2382DD2400EF2858 /* UploadRequest.swift */; };
+		1C7C345F24A0025400FBEE26 /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C7C345E24A0025400FBEE26 /* sample.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		084CA3972382DD0100EF2858 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		084CA3992382DD1000EF2858 /* FetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRequest.swift; sourceTree = "<group>"; };
+		084CA39B2382DD2400EF2858 /* UploadRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadRequest.swift; sourceTree = "<group>"; };
+		087855B7237AC87700F2B162 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		087855B9237AC87700F2B162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		087855BB237AC87700F2B162 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		087855BD237AC87700F2B162 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		087855C0237AC87700F2B162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		087855C2237AC87900F2B162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		087855C5237AC87900F2B162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		087855C7237AC87900F2B162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		087855D0237AE2BE00F2B162 /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample.jpg; sourceTree = "<group>"; };
+		087B85AE237AB5D300D9B1EE /* Optidash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Optidash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		087B85B1237AB5D300D9B1EE /* Optidash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Optidash.h; sourceTree = "<group>"; };
+		087B85B2237AB5D300D9B1EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		087B85B9237AB8A900D9B1EE /* OptidashClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptidashClient.swift; sourceTree = "<group>"; };
+		08D4A2B8238400F500ED1171 /* OptidashError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptidashError.swift; sourceTree = "<group>"; };
+		1C63AA5023AC08C60042DBF0 /* BoundaryGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundaryGenerator.swift; sourceTree = "<group>"; };
+		1C7C3448249FFBA400FBEE26 /* Example macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C7C344A249FFBA400FBEE26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C7C344C249FFBA400FBEE26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C7C344E249FFBA600FBEE26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C7C3451249FFBA600FBEE26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C7C3453249FFBA600FBEE26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C7C3454249FFBA600FBEE26 /* Example_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example_macOS.entitlements; sourceTree = "<group>"; };
+		1C7C345E24A0025400FBEE26 /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		087855B4237AC87700F2B162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087B85AB237AB5D300D9B1EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C7C3445249FFBA400FBEE26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		087855B8237AC87700F2B162 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				087855B9237AC87700F2B162 /* AppDelegate.swift */,
+				087855C2237AC87900F2B162 /* Assets.xcassets */,
+				087855C7237AC87900F2B162 /* Info.plist */,
+				087855C4237AC87900F2B162 /* LaunchScreen.storyboard */,
+				087855BF237AC87700F2B162 /* Main.storyboard */,
+				087855D0237AE2BE00F2B162 /* sample.jpg */,
+				087855BB237AC87700F2B162 /* SceneDelegate.swift */,
+				087855BD237AC87700F2B162 /* ViewController.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		087B85A4237AB5D300D9B1EE = {
+			isa = PBXGroup;
+			children = (
+				087855B8237AC87700F2B162 /* Example */,
+				087B85B0237AB5D300D9B1EE /* Optidash */,
+				1C7C3449249FFBA400FBEE26 /* Example macOS */,
+				087B85AF237AB5D300D9B1EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		087B85AF237AB5D300D9B1EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				087B85AE237AB5D300D9B1EE /* Optidash.framework */,
+				087855B7237AC87700F2B162 /* Example.app */,
+				1C7C3448249FFBA400FBEE26 /* Example macOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		087B85B0237AB5D300D9B1EE /* Optidash */ = {
+			isa = PBXGroup;
+			children = (
+				08CD757723E2FFF00022232D /* Classes */,
+				087B85B2237AB5D300D9B1EE /* Info.plist */,
+				087B85B1237AB5D300D9B1EE /* Optidash.h */,
+			);
+			path = Optidash;
+			sourceTree = "<group>";
+		};
+		08CD757723E2FFF00022232D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				084CA3972382DD0100EF2858 /* BaseRequest.swift */,
+				1C63AA5023AC08C60042DBF0 /* BoundaryGenerator.swift */,
+				084CA3992382DD1000EF2858 /* FetchRequest.swift */,
+				087B85B9237AB8A900D9B1EE /* OptidashClient.swift */,
+				08D4A2B8238400F500ED1171 /* OptidashError.swift */,
+				084CA39B2382DD2400EF2858 /* UploadRequest.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1C7C3449249FFBA400FBEE26 /* Example macOS */ = {
+			isa = PBXGroup;
+			children = (
+				1C7C345E24A0025400FBEE26 /* sample.jpg */,
+				1C7C344A249FFBA400FBEE26 /* AppDelegate.swift */,
+				1C7C344C249FFBA400FBEE26 /* ViewController.swift */,
+				1C7C344E249FFBA600FBEE26 /* Assets.xcassets */,
+				1C7C3450249FFBA600FBEE26 /* Main.storyboard */,
+				1C7C3453249FFBA600FBEE26 /* Info.plist */,
+				1C7C3454249FFBA600FBEE26 /* Example_macOS.entitlements */,
+			);
+			path = "Example macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		087B85A9237AB5D300D9B1EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087B85B3237AB5D300D9B1EE /* Optidash.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		087855B6237AC87700F2B162 /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 087855CA237AC87900F2B162 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				087855B3237AC87700F2B162 /* Sources */,
+				087855B4237AC87700F2B162 /* Frameworks */,
+				087855B5237AC87700F2B162 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Example;
+			productName = Example;
+			productReference = 087855B7237AC87700F2B162 /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		087B85AD237AB5D300D9B1EE /* Optidash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 087B85B6237AB5D300D9B1EE /* Build configuration list for PBXNativeTarget "Optidash" */;
+			buildPhases = (
+				087B85A9237AB5D300D9B1EE /* Headers */,
+				087B85AA237AB5D300D9B1EE /* Sources */,
+				087B85AB237AB5D300D9B1EE /* Frameworks */,
+				087B85AC237AB5D300D9B1EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Optidash;
+			productName = Pixaven;
+			productReference = 087B85AE237AB5D300D9B1EE /* Optidash.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1C7C3447249FFBA400FBEE26 /* Example macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C7C3457249FFBA600FBEE26 /* Build configuration list for PBXNativeTarget "Example macOS" */;
+			buildPhases = (
+				1C7C3444249FFBA400FBEE26 /* Sources */,
+				1C7C3445249FFBA400FBEE26 /* Frameworks */,
+				1C7C3446249FFBA400FBEE26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Example macOS";
+			productName = "Example macOS";
+			productReference = 1C7C3448249FFBA400FBEE26 /* Example macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		087B85A5237AB5D300D9B1EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = Optidash;
+				TargetAttributes = {
+					087855B6237AC87700F2B162 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					087B85AD237AB5D300D9B1EE = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+					1C7C3447249FFBA400FBEE26 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 087B85A8237AB5D300D9B1EE /* Build configuration list for PBXProject "Optidash" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 087B85A4237AB5D300D9B1EE;
+			productRefGroup = 087B85AF237AB5D300D9B1EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				087B85AD237AB5D300D9B1EE /* Optidash */,
+				087855B6237AC87700F2B162 /* Example */,
+				1C7C3447249FFBA400FBEE26 /* Example macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		087855B5237AC87700F2B162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087855C6237AC87900F2B162 /* LaunchScreen.storyboard in Resources */,
+				087855C3237AC87900F2B162 /* Assets.xcassets in Resources */,
+				087855C1237AC87700F2B162 /* Main.storyboard in Resources */,
+				087855D1237AE2BE00F2B162 /* sample.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087B85AC237AB5D300D9B1EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C7C3446249FFBA400FBEE26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C7C344F249FFBA600FBEE26 /* Assets.xcassets in Resources */,
+				1C7C345F24A0025400FBEE26 /* sample.jpg in Resources */,
+				1C7C3452249FFBA600FBEE26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		087855B3237AC87700F2B162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08D4A2B72383F19D00ED1171 /* UploadRequest.swift in Sources */,
+				08D4A2B62383F19B00ED1171 /* FetchRequest.swift in Sources */,
+				08D4A2BA2384047200ED1171 /* OptidashError.swift in Sources */,
+				08D4A2B52383F19900ED1171 /* BaseRequest.swift in Sources */,
+				087855BE237AC87700F2B162 /* ViewController.swift in Sources */,
+				1C63AA5223AC096B0042DBF0 /* BoundaryGenerator.swift in Sources */,
+				087855BA237AC87700F2B162 /* AppDelegate.swift in Sources */,
+				087855CD237ACB4B00F2B162 /* OptidashClient.swift in Sources */,
+				087855BC237AC87700F2B162 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087B85AA237AB5D300D9B1EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084CA39C2382DD2400EF2858 /* UploadRequest.swift in Sources */,
+				084CA39A2382DD1000EF2858 /* FetchRequest.swift in Sources */,
+				08D4A2B9238400F500ED1171 /* OptidashError.swift in Sources */,
+				084CA3982382DD0100EF2858 /* BaseRequest.swift in Sources */,
+				087B85BA237AB8A900D9B1EE /* OptidashClient.swift in Sources */,
+				1C63AA5123AC08C60042DBF0 /* BoundaryGenerator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C7C3444249FFBA400FBEE26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C7C345A249FFF1500FBEE26 /* FetchRequest.swift in Sources */,
+				1C7C344D249FFBA400FBEE26 /* ViewController.swift in Sources */,
+				1C7C3459249FFF1500FBEE26 /* BoundaryGenerator.swift in Sources */,
+				1C7C344B249FFBA400FBEE26 /* AppDelegate.swift in Sources */,
+				1C7C345D249FFF1500FBEE26 /* UploadRequest.swift in Sources */,
+				1C7C345C249FFF1500FBEE26 /* OptidashError.swift in Sources */,
+				1C7C345B249FFF1500FBEE26 /* OptidashClient.swift in Sources */,
+				1C7C3458249FFF1500FBEE26 /* BaseRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		087855BF237AC87700F2B162 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				087855C0237AC87700F2B162 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		087855C4237AC87900F2B162 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				087855C5237AC87900F2B162 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1C7C3450249FFBA600FBEE26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C7C3451249FFBA600FBEE26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		087855C8237AC87900F2B162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G6PMVPLSF;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.optidash.example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		087855C9237AC87900F2B162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G6PMVPLSF;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.optidash.example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		087B85B4237AB5D300D9B1EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		087B85B5237AB5D300D9B1EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		087B85B7237AB5D300D9B1EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = K2QKBQFD59;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Optidash/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.optidash.client;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		087B85B8237AB5D300D9B1EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = K2QKBQFD59;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Optidash/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.optidash.client;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1C7C3455249FFBA600FBEE26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Example macOS/Example_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Example macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "ai.optidash.Example-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1C7C3456249FFBA600FBEE26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Example macOS/Example_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Example macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "ai.optidash.Example-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		087855CA237AC87900F2B162 /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087855C8237AC87900F2B162 /* Debug */,
+				087855C9237AC87900F2B162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		087B85A8237AB5D300D9B1EE /* Build configuration list for PBXProject "Optidash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087B85B4237AB5D300D9B1EE /* Debug */,
+				087B85B5237AB5D300D9B1EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		087B85B6237AB5D300D9B1EE /* Build configuration list for PBXNativeTarget "Optidash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087B85B7237AB5D300D9B1EE /* Debug */,
+				087B85B8237AB5D300D9B1EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C7C3457249FFBA600FBEE26 /* Build configuration list for PBXNativeTarget "Example macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7C3455249FFBA600FBEE26 /* Debug */,
+				1C7C3456249FFBA600FBEE26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 087B85A5237AB5D300D9B1EE /* Project object */;
+}
